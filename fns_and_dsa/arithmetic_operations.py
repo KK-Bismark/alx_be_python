@@ -11,7 +11,9 @@ def perform_operation(num1, num2, operation):
         case "multiply":
             return (num1 * num2)
         case "divide":
-            if num2 == 0:
+            if num > 0:
+                return (num1 / num2)
+            elif num2 == 0:
                 result = "The first number isn't divisible by 0"
                 return (result)
             else:
