@@ -33,7 +33,7 @@ def main():
         new_temp = convert_to_celsius(user_temp)
         new_temp_unit = 'C'
     else:
-        print("You selected a wrong unit.")
+        print("Invalid temperature. Please enter a numeric value.")
 
     # print the new temperature in the converted unit
     dgr = "\u00B0"
