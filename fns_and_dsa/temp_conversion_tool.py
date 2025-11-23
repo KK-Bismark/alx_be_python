@@ -15,7 +15,7 @@ def convert_to_celsius(fahrenheit):
 
 # A function to convert from celcius to fahrenheit
 def convert_to_fahrenheit(celsius):
-    temp_fahrenheit = celcius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
+    temp_fahrenheit = celsius * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
     return temp_fahrenheit
 
 
