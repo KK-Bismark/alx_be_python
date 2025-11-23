@@ -36,7 +36,8 @@ def main():
         print("You selected a wrong unit.")
 
     # print the new temperature in the converted unit
-    print(f"{user_temp}{temp_unit} is {new_temp}{new_temp_unit}")
+    dgr = "\u00B0"
+    print(f"{user_temp}{dgr}{temp_unit} is {new_temp}{dgr}{new_temp_unit}")
 
 
 
