@@ -3,7 +3,7 @@
 
 class BankAccount:
     def __init__(self, account_balance):
-        self.account_balance = account_balance
+        self.account_balance = account_balance = 0
 
     # function that handles depositing of money into the bank account.
     def deposit(self, amount):
