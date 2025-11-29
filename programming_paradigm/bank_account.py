@@ -11,7 +11,10 @@ class BankAccount:
 
     # function that handles withdrawal of money
     def withdraw(self, amount):
-        self.account_balance -= amount
+        if self.account_balance >= amount:
+            self.account_balance -= amount
+            return True
+        return False
 
     # function that handles the displaying of the account balance.
     def display_balance(self):
