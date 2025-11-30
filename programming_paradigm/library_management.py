@@ -1,4 +1,6 @@
 # An implementation of a system that tracks books in a library.
+# Author: KK-Bismark (Bismark Kwaku Kete)
+
 
 class Book:
     """ Book class """
@@ -45,7 +47,12 @@ class Library:
 
     def list_available_books(self):
         """ Storage of available books. """
-        available_ones = [book for book in self._books if book.is_available()]
+        available_ones = []
+
+        for book in self._books:
+            if book.is_available():
+                available_ones.append(book)
+
         if not available_ones:
             print("No books are available.")
         else:
