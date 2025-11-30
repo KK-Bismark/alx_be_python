@@ -26,14 +26,14 @@ class SimpleCalculatorTest(unittest.TestCase):
         self.assertEqual(self.calc.subtract(1, -1), 2)
 
     # test case for multiplication
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test for multiplication."""
         self.assertEqual(self.calc.multiply(2, 0), 0)
         self.assertEqual(self.calc.multiply(2, 2), 4)
         self.assertEqual(self.calc.multiply(11, 1), 11)
 
     # test case for division function
-    def test_divide(self):
+    def test_division(self):
         """Test for division."""
         self.assertEqual(self.calc.divide(2, 0), ZeroDivisionError)
         self.assertEqual(self.calc.divide(2, 1), 2)
