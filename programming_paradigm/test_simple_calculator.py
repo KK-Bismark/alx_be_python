@@ -12,14 +12,14 @@ class SimpleCalculatorTest(unittest.TestCase):
         self.calc = SimpleCalculator()
 
     # test case for addition
-    def test_add(self):
+    def test_addition(self):
         """ Test for addition."""
         self.assertEqual(self.calc.add(2, 2), 4)
         self.assertEqual(self.calc.add(2, -1), 1)
         self.assertEqual(self.calc.add(2, 0), 2)
 
     # test case for subtraction
-    def test_subtract(self):
+    def test_subtraction(self):
         """Test for subtraction."""
         self.assertEqual(self.calc.subtract(2, 2), 0)
         self.assertEqual(self.calc.subtract(1, 0), 1)
