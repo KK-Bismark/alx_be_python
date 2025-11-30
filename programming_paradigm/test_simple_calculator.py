@@ -35,7 +35,10 @@ class SimpleCalculatorTest(unittest.TestCase):
     # test case for division function
     def test_division(self):
         """Test for division."""
-        self.assertEqual(self.calc.divide(2, 0), ZeroDivisionError)
+
+        # division by zero.
+        self.assertIsNone(self.calc.divide(10, 0))
+
         self.assertEqual(self.calc.divide(2, 1), 2)
         self.assertEqual(self.calc.divide(2, 2), 1)
         self.assertEqual(self.calc.divide(0, 2), 0)
